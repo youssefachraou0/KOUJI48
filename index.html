@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple POS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="pos">
+    <header class="pos-header">
+      <h1>Point of Sale</h1>
+      <p>Fast checkout for small shops.</p>
+    </header>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Products</h2>
+        <div id="products" class="products"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Cart</h2>
+        <ul id="cart" class="cart"></ul>
+        <div class="totals">
+          <p>Subtotal: <strong id="subtotal">$0.00</strong></p>
+          <p>Tax (10%): <strong id="tax">$0.00</strong></p>
+          <p>Total: <strong id="total">$0.00</strong></p>
+        </div>
+        <button id="checkout" class="checkout">Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
